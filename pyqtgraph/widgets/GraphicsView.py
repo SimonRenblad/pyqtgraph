@@ -386,3 +386,6 @@ class GraphicsView(QtWidgets.QGraphicsView):
         
     def dragEnterEvent(self, ev):
         ev.ignore()  ## not sure why, but for some reason this class likes to consume drag events
+
+    def dragLeaveEvent(self, ev):
+        ev.ignore()
